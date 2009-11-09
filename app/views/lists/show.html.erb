@@ -1,0 +1,18 @@
+<h1><%= image_tag("32/list.png") %><%=h @list.name %></h1>
+
+<p> <%= image_tag("24/sticky-note.png") %> <%= link_to 'New task', new_list_task_path(@list) %></p>
+
+<table>
+  <% @list.tasks.each do |task| %>
+  <tr>
+    <td><%= image_tag("16/done.png") if task.completed %> </td>
+    <td class="<%= task.completed ? "task_completed" : "task_not_completed" %>" > <%=h task.title %> </td>
+    <td > <%= link_to image_tag("16/edit.png", :id => "edit"), edit_list_task_path(@list, task) %></td>
+    <td ><%= link_to image_tag("16/delete.png", :id => "delete"), list_task_path(@list, task), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back to ' + current_user.login + "'s lists", lists_path %>

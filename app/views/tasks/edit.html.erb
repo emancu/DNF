@@ -1,0 +1,18 @@
+<h1> <%= image_tag("32/sticky-note.png") %>Edit Task </h1>
+
+<% form_for @task, @task, :url => { :action => "update" }, :method => "put" do |f| %>
+  <%= f.error_messages %>
+  <b><%= f.label :title %></b>
+  &nbsp;
+  <%= f.text_field :title %>
+  <br/><br/>
+  <b><%= f.label :completed %></b>
+  &nbsp;
+  <%= f.check_box :completed %>
+  <br/> <br/>
+  <%= f.submit "Update" %>
+  <br/>
+<% end %>
+<br />
+<%= link_to "Back", list_path(@task.list) %>
+

@@ -1,0 +1,76 @@
+--- !ruby/object:Gem::Specification 
+name: stories
+version: !ruby/object:Gem::Version 
+  version: 0.1.3
+platform: ruby
+authors: 
+- Damian Janowski
+- Michel Martens
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-09-04 00:00:00 -03:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: contest
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        version: "0.1"
+    version: 
+description: Write Stories and User Acceptance Tests using Contest, the tiny add on to Test::Unit that provides nested contexts and declarative tests.
+email: 
+- djanowski@dimaion.com
+- michel@soveran.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/tasks/stories.rake
+- lib/stories/runner/pdf.rb
+- lib/stories/runner.rb
+- lib/stories.rb
+- README.markdown
+- LICENSE
+- Rakefile
+- rails/init.rb
+- test/all_test.rb
+- test/pdf_test.rb
+has_rdoc: true
+homepage: http://github.com/citrusbyte/stories
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: stories
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 2
+summary: Write Stories and User Acceptance Tests using the minimalist testing framework Contest.
+test_files: []
+

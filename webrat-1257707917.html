@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>user_sessions: new</title>
+  <link href="/stylesheets/style.css?1257705822" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/prototype.js?1257550614" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1257550614" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1257550614" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1257550614" type="text/javascript"></script>
+<script src="/javascripts/application.js?1257550614" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="header"></div>
+<div id="menu">
+  <img src="/images/logo.png">
+  <div id="state">
+    
+      <a href="/account/new">Register</a> |
+      <a href="/user_session/new">Log In</a>
+    
+  </div>
+</div>
+<div id="content">
+  <p style="color: green"></p>
+  <h1>Login</h1>
+ 
+<form action="/user_session" class="new_user_session" id="new_user_session" method="post">
+  
+  <label for="user_session_login">Login</label><br />
+  <input id="user_session_login" name="user_session[login]" size="30" type="text" /><br />
+  <br />
+  <label for="user_session_password">Password</label><br />
+  <input id="user_session_password" name="user_session[password]" size="30" type="password" /><br />
+  <br />
+  <input name="user_session[remember_me]" type="hidden" value="0" /><input id="user_session_remember_me" name="user_session[remember_me]" type="checkbox" value="1" /><label for="user_session_remember_me">Remember me</label><br />
+  <br />
+  <input id="user_session_submit" name="commit" type="submit" value="Login" />
+</form>
+
+</div>
+
+</body>
+</html>
+

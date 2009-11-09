@@ -1,0 +1,17 @@
+ToDo list.
+
+Para la autenticación de usuarios, elegi un plugin llamado "authlogic" sencillo de implementar, que lo encontre en railscasts.
+Para los test utilice "stories", una gema que me recomendo Lucas.
+
+Defini los "stories" de acuerdo a las funcionalidades que esperaba de mi aplicación y luego defini el modelo a utilizar.
+
+Fui construyendo cada "scenario" conjuntamente con el modelo, y luego realice las vistas y controladores para ajustarse a los test.
+
+
+## Notas ##
+> El administrador de usuario me parecio que no era necesario, ya que era más de lo mismo. Sin embargo lo puedo agregar rápidamente.
+
+> Cada lista contiene varios tasks, y si bien la funcionalidad esperada era poder alternar el estado de cada task desde la lista, eso requeria usar AJAX y demoraba más tiempo del que tenía. Sin embargo, se puede lograr la misma funcionalidad, borrando cada tarea terminada, aunque de esta forma se pierde el registro de las task realizadas.
+
+> Se que faltan mejorar algunas cosas pequeñas sobre el diseño, pero creo que la aplicación esta bien presentada de todas formas.
+

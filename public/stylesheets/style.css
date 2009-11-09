@@ -1,0 +1,41 @@
+body{
+  background: #D7DDE5;
+  color: #3a5273;
+}
+
+img {
+  border: hidden;
+}
+
+#header{
+  height: 40px;
+}
+
+#menu{
+  height: 200px;
+  background-image: url("/images/logo.png");
+  background-repeat: no-repeat;
+}
+
+#menu img {
+  float: left;
+}
+
+#content{
+  padding: 10px;
+  height: 500px;
+}
+
+.list_row {
+  min-width: 160px;
+}
+
+.task_completed {
+  text-decoration:line-through;
+  min-width: 140px;
+}
+
+.task_not_completed {
+  text-decoration:none;
+  min-width: 140px;
+}

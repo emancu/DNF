@@ -1,0 +1,12 @@
+<h1> <%= image_tag("32/list.png") %>Create a List </h1>
+
+<% form_for(@list) do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <br/>
+  <%= f.submit 'Create' %>
+<% end %>
+<br/>
+<%= link_to 'Back', lists_path %>
+
+

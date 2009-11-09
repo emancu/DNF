@@ -1,0 +1,11 @@
+<h1> <%= image_tag("32/sticky-note.png") %> New task </h1>
+
+<% form_for @task, @task, :url => { :action => "create" }, :method => "post" do |f| %>
+  <%= f.error_messages %>
+  <b><%= f.label :title %></b> &nbsp; <%= f.text_field :title %>
+  <br/> <br/>
+  <%= f.submit 'Create' %>
+<% end %>
+<br/>
+<%= link_to 'Back', list_path(@list) %>
+

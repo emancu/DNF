@@ -1,0 +1,17 @@
+<h1><%= image_tag("32/user.gif") %> My lists </h1>
+
+<p><%= image_tag("24/list.png") %><%= link_to 'New list', new_list_path %></p>
+
+<table>
+<% current_user.lists.each do |list| %>
+  <tr>
+    <td class="list_row"><%=h list.name %></td>
+    <td><%= link_to image_tag("16/show_list.png", :id => "show"), list %></td>
+    <td><%= link_to image_tag("16/edit.png", :id => "edit"), edit_list_path(list) %></td>
+    <td><%= link_to image_tag("16/delete.png", :id => "delete"), list, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
