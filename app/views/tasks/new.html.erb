@@ -3,6 +3,7 @@
 <% form_for @task, @task, :url => { :action => "create" }, :method => "post" do |f| %>
   <%= f.error_messages %>
   <b><%= f.label :title %></b> &nbsp; <%= f.text_field :title %>
+  <b><%= f.label :description %></b> &nbsp; <%= f.text_field :description %>
   <br/> <br/>
   <%= f.submit 'Create' %>
 <% end %>
